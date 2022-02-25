@@ -7,12 +7,10 @@ import { BrowserRouter } from '../node_modules/react-router-dom/index';
 function App() {
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path='/' element={<NewsPage />} />
       <Route path='/:category' element={<NewsPage />} />
     </Routes>
-    </BrowserRouter>
   );
 }
 
